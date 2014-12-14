@@ -1,7 +1,5 @@
 package com.goodtrendltd.wechat.model.outgoing;
 
-import com.goodtrendltd.wechat.model.incoming.IncomingBaseMessage;
-
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
@@ -13,7 +11,8 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
  */
 @XmlType
 @XmlRootElement(name = "xml")
-public class OutGoingTextMessage extends OutGoingBaseMessage {
+public class OutGoingTextMessage extends OutGoingBaseMessage
+{
     /**
      * 回复的消息内容
      */
@@ -21,11 +20,13 @@ public class OutGoingTextMessage extends OutGoingBaseMessage {
 
     @XmlElement(name = "Content")
     @XmlJavaTypeAdapter(AdapterCDATA.class)
-    public String getContent() {
+    public String getContent()
+    {
         return content;
     }
 
-    public void setContent(String content) {
+    public void setContent(String content)
+    {
         this.content = content;
     }
 }
