@@ -108,6 +108,11 @@ public class MpServiceImpl implements MpService
         return incomingBaseMessage.getOutputMsg();
     }
 
+    /**
+     *
+     * @param incomingString
+     * @return the subclass of the baseMessage based on the incoming message type
+     */
     private IncomingBaseMessage getIncomingMsg(String incomingString)
     {
         try

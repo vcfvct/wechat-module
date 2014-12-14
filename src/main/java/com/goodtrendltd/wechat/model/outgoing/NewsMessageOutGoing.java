@@ -7,7 +7,6 @@ import java.util.List;
  /**
  * 多图文消息，
  * 单图文的时候 Articles 只放一个就行了
- * @author Caspar.chen
  */
 public class NewsMessageOutGoing extends OutGoingBaseMessage {
     /**

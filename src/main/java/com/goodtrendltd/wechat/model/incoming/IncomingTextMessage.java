@@ -35,6 +35,7 @@ public class IncomingTextMessage extends IncomingBaseMessage
         this.content = content;
     }
 
+    @Override
     public String getOutputMsg()
     {
         OutGoingTextMessage outGoingTextMessage = new OutGoingTextMessage();

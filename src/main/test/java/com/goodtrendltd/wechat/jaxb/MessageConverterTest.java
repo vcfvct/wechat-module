@@ -1,12 +1,9 @@
 package com.goodtrendltd.wechat.jaxb;
 
 import com.goodtrendltd.wechat.model.JaxbHelper;
-import com.goodtrendltd.wechat.model.incoming.IncomingBaseMessage;
 import com.goodtrendltd.wechat.model.incoming.IncomingTextMessage;
-import com.goodtrendltd.wechat.model.incoming.IncomingTextMessageTemp;
 import com.goodtrendltd.wechat.model.outgoing.OutGoingMsgType;
 import com.goodtrendltd.wechat.model.outgoing.OutGoingTextMessage;
-import com.sun.xml.internal.ws.message.jaxb.JAXBHeader;
 import org.junit.Test;
 
 import javax.xml.bind.JAXBContext;

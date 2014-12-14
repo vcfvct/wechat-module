@@ -6,6 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 /**
  * Created by LeOn on 12/11/14.
+ *
+ * With RestController, we have @ResponseBody by default.
  */
 @RestController
 @RequestMapping("/api/mp")
@@ -16,7 +18,6 @@ public class MpRestController
     MpService mpService;
 
     @RequestMapping(method = RequestMethod.GET)
-    @ResponseBody
     public String handleSignature(@RequestParam("signature") String signature, @RequestParam("timestamp") String timestamp, @RequestParam("nonce") String nonce,
                                   @RequestParam("echostr") String echostr)
     {
@@ -24,7 +25,6 @@ public class MpRestController
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    @ResponseBody
     public String handleIncoming(@RequestBody String incomingBaseMessage)
     {
         String result = mpService.handleIncomingMessage(incomingBaseMessage);
