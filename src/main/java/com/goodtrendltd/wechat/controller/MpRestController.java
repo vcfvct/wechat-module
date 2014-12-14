@@ -4,8 +4,6 @@ import com.goodtrendltd.wechat.service.MpService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.servlet.http.HttpServletResponse;
-
 /**
  * Created by LeOn on 12/11/14.
  */
