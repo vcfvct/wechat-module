@@ -40,6 +40,7 @@
         <mockito.version>1.10.8</mockito.version>
         <junit.version>4.11</junit.version>
         <jstl.version>1.2</jstl.version>
+        <log4j.version>1.2.17</log4j.version>
         <servlet.api.version>3.0.1</servlet.api.version>
 
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -81,6 +82,13 @@
             <artifactId>spring-test</artifactId>
             <version>${spring.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>${log4j.version}</version>
+        </dependency>
+
 
         <dependency>
             <groupId>javax.servlet</groupId>
