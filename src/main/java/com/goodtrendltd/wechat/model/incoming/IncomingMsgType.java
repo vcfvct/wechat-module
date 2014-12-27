@@ -9,5 +9,6 @@ public enum IncomingMsgType {
     voice,
     video,
     location,
-    link;
+    link,
+    event;
 }

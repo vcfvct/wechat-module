@@ -1,10 +1,8 @@
 package com.goodtrendltd.wechat.service;
 
+import com.goodtrendltd.wechat.model.EventType;
 import com.goodtrendltd.wechat.model.JaxbHelper;
-import com.goodtrendltd.wechat.model.incoming.GeneralMsgForJaxb;
-import com.goodtrendltd.wechat.model.incoming.IncomingBaseMessage;
-import com.goodtrendltd.wechat.model.incoming.IncomingMsgType;
-import com.goodtrendltd.wechat.model.incoming.IncomingTextMessage;
+import com.goodtrendltd.wechat.model.incoming.*;
 import com.goodtrendltd.wechat.model.outgoing.OutGoingBaseMessage;
 import com.goodtrendltd.wechat.model.outgoing.OutGoingMsgType;
 import com.goodtrendltd.wechat.model.outgoing.OutGoingTextMessage;
@@ -126,6 +124,10 @@ public class MpServiceImpl implements MpService
                     return (IncomingTextMessage) JaxbHelper.getUnmarshaller(IncomingTextMessage.class).unmarshal(new StreamSource(new ByteArrayInputStream
                             (incomingString
                             .getBytes())));
+                case event:
+                    return (IncomingEventMessage) JaxbHelper.getUnmarshaller(IncomingEventMessage.class).unmarshal(new StreamSource(new ByteArrayInputStream
+                            (incomingString
+                                    .getBytes())));
                 default:
                     break;
             }

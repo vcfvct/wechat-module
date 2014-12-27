@@ -1,4 +1,4 @@
-package com.goodtrendltd.wechat.model.outgoing;
+package com.goodtrendltd.wechat.model;
 
 /**
  * Created by LeOn on 12/11/14.

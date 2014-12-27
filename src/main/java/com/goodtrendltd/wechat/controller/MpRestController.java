@@ -1,8 +1,11 @@
 package com.goodtrendltd.wechat.controller;
 
 import com.goodtrendltd.wechat.service.MpService;
+import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.Date;
 
 /**
  * Created by LeOn on 12/11/14.
@@ -13,6 +16,8 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/api/mp")
 public class MpRestController
 {
+    private final static Logger logger = Logger.getLogger(MpRestController.class);
+
 
     @Autowired
     MpService mpService;
@@ -27,7 +32,9 @@ public class MpRestController
     @RequestMapping(method = RequestMethod.POST)
     public String handleIncoming(@RequestBody String incomingBaseMessage)
     {
+        logger.debug("Received incoming message: '"+incomingBaseMessage + "' at: " + new Date());
         String result = mpService.handleIncomingMessage(incomingBaseMessage);
+        logger.debug("Return outgoing message: '" + result + "' at: " + new Date());
         return result;
     }
 
