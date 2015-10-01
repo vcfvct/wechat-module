@@ -1,7 +1,7 @@
 # wechat-module
 a module for the mp in wechat
 
-Spring4/Hibernate4/SOA.
+Spring4/Jaxb/SOA.
 
 Anotation based, xmlless config
 
