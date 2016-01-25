@@ -86,6 +86,6 @@ public class IncomingEventMessage extends IncomingBaseMessage
         {
             e.printStackTrace();
         }
-        return JaxbHelper.unEscapeQuotes(sw.toString());
+        return JaxbHelper.unEscapeBrackets(sw.toString());
     }
 }

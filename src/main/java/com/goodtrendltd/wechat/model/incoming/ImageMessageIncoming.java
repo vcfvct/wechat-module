@@ -17,4 +17,10 @@ public class ImageMessageIncoming extends IncomingBaseMessage {
     public void setPicUrl(String picUrl) {
         this.picUrl = picUrl;
     }
+
+    @Override
+    public String getOutputMsg()
+    {
+        return null;
+    }
 }

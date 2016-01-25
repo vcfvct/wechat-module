@@ -63,6 +63,6 @@ public class IncomingTextMessage extends IncomingBaseMessage
         {
             e.printStackTrace();
         }
-        return JaxbHelper.unEscapeQuotes(sw.toString());
+        return JaxbHelper.unEscapeBrackets(sw.toString());
     }
 }

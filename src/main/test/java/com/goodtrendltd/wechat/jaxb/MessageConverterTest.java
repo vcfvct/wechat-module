@@ -57,7 +57,7 @@ public class MessageConverterTest
         StringWriter sw = new StringWriter();
         marshaller.marshal(outGoingTextMessage, sw);
 
-        String result = JaxbHelper.unEscapeQuotes(sw.toString());
+        String result = JaxbHelper.unEscapeBrackets(sw.toString());
         System.out.print(result);
     }
 }

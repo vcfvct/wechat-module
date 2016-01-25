@@ -39,7 +39,7 @@ public class JaxbHelper
         return null;
     }
 
-    public static String unEscapeQuotes(String input)
+    public static String unEscapeBrackets(String input)
     {
         return input.replaceAll("&lt;", "<").replaceAll("&gt;", ">");
     }

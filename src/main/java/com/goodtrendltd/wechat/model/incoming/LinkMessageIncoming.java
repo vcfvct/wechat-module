@@ -40,4 +40,10 @@ public class LinkMessageIncoming extends IncomingBaseMessage {
     public void setUrl(String url) {
         this.url = url;
     }
+
+    @Override
+    public String getOutputMsg()
+    {
+        return null;
+    }
 }

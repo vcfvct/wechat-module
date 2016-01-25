@@ -80,8 +80,5 @@ public abstract class IncomingBaseMessage {
         this.msgId = msgId;
     }
 
-    public String getOutputMsg()
-    {
-        return null;
-    }
+    public abstract String getOutputMsg();
 }

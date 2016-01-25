@@ -54,4 +54,10 @@ public class LocationMessageIncoming extends IncomingBaseMessage {
     public void setLabel(String label) {
         this.label = label;
     }
+
+    @Override
+    public String getOutputMsg()
+    {
+        return null;
+    }
 }

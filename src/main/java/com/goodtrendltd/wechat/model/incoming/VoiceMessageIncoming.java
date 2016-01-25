@@ -28,4 +28,10 @@ public class VoiceMessageIncoming extends IncomingBaseMessage {
     public void setFormat(String format) {
         this.format = format;
     }
+
+    @Override
+    public String getOutputMsg()
+    {
+        return null;
+    }
 }
